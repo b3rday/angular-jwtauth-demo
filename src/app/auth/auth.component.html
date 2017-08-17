@@ -1,0 +1,27 @@
+
+<md-card>
+</md-card>
+<md-card>
+  <md-card-title>Please Login In </md-card-title>
+<form class="example-form">
+
+<md-input-container>
+  <input mdInput placeholder="Username" name="username" [(ngModel)]="user.username" class="example-full-width">
+</md-input-container>
+
+<md-input-container>
+  <input mdInput type="password" placeholder="Password"  name="password" [(ngModel)]="user.password" class="example-full-width">
+</md-input-container>
+
+</form>
+  <md-card-content>
+    <p>
+      Enter your Username and Password then hit Let Me In 
+      
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <a  md-raised-button color="primary" (click)="login()">Let Me In</a>
+  </md-card-actions>
+
+</md-card>
